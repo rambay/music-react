@@ -129,15 +129,32 @@
 }
 
 .galleryList {
-  margin: 32px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 32px;
   text-align: center;
 }
 
-.bio img {
+.galleryList figure {
+  position: relative;
+  width: 250px;
+  height: 250px;
   display: inline-block;
-  width: 210px;
+  border: 2px dotted #8a4c4f;
+  overflow: hidden;
+}
+
+.bio img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: inline-block;
   cursor: pointer;
-  padding: 12px;
+  padding: 20px;
 }
 
 .footer {
@@ -165,7 +182,7 @@
 }
 
 .bio .zoom {
-  zoom: 1.2;
+  width: 250px;
   transition: 0.4s all ease;
   padding: 0;
 }

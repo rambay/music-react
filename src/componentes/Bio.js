@@ -30,30 +30,38 @@ function Bio() {
         miles en sólo unos días.
       </p>
       <div className="galleryList">
-        <img
-          src="./imagenes/discografia1.jpg"
-          onMouseOver={zoom}
-          onMouseOut={zoomOut}
-          alt="Discografia 1"
-        />
-        <img
-          src="./imagenes/discografia2.jpg"
-          onMouseOver={zoom}
-          onMouseOut={zoomOut}
-          alt="Discografia 2"
-        />
-        <img
-          src="./imagenes/discografia3.jpg"
-          onMouseOver={zoom}
-          onMouseOut={zoomOut}
-          alt="Discografia 3"
-        />
-        <img
-          src="./imagenes/discografia4.jpg"
-          onMouseOver={zoom}
-          onMouseOut={zoomOut}
-          alt="Discografia 4"
-        />
+        <figure>
+          <img
+            src="./imagenes/discografia1.jpg"
+            onMouseOver={zoom}
+            onMouseOut={zoomOut}
+            alt="Discografia 1"
+          />
+        </figure>
+        <figure>
+          <img
+            src="./imagenes/discografia2.jpg"
+            onMouseOver={zoom}
+            onMouseOut={zoomOut}
+            alt="Discografia 2"
+          />
+        </figure>
+        <figure>
+          <img
+            src="./imagenes/discografia3.jpg"
+            onMouseOver={zoom}
+            onMouseOut={zoomOut}
+            alt="Discografia 3"
+          />
+        </figure>
+        <figure>
+          <img
+            src="./imagenes/discografia4.jpg"
+            onMouseOver={zoom}
+            onMouseOut={zoomOut}
+            alt="Discografia 4"
+          />
+        </figure>
       </div>
     </div>
   );
